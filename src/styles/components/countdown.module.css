@@ -55,3 +55,24 @@
 .startCountdown:hover {
     background: var(--blue-dark);
 }
+.startCountdownActive {
+    background: var(--white);
+    color: var(--title);
+}
+.startCountdownActive:hover {
+    background: var(--red);
+    color: var(--white);
+}
+.startCountdown:not(:disabled):hover {
+    background: var(--blue-dark);
+}
+.startCountdownActive:not(:disabled):hover {
+    background: var(--red);
+    color: var(--title);
+}
+.startCountdown:disabled {
+    border-bottom: 0.8rem solid green;
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
+}
